@@ -1,0 +1,6 @@
+- .form__radio--input isn't accessible because you've used display none. Try an accessible way to hide stuff using opacity, height etc (look up sr-only and you'll find css snippet examples)
+2- Be careful how drastic your animations are atm. Make sure you honor prefers-reduced-motion media query in particular and turn animations off for those people if you've not done so already
+3- The cards that flip aren't accessible as they're only interactive on hover. Try including a button inside that could flip them. If you make the card position relative, give the button an :after pseudo that's position absolute, height and width 100%, and `z-index: -1`, that will make the whole card clickable. Again, you could even hide that button with an sr-only class, so it wouldn't need to affect your design (except you'd need to add a focus state to show the card is interactive).
+4- The form button is much smaller than other buttons (?)
+5- Maybe add some hover transitions to the nav
+6- One more pro design tip is to treat buttons like they're physically clickable, so they move down slightly on click. The transition you've got on there atm is sort of counter-intuitive for that because it moves up.

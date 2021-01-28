@@ -5,3 +5,4 @@
 5- Maybe add some hover transitions to the nav
 6- One more pro design tip is to treat buttons like they're physically clickable, so they move down slightly on click. The transition you've got on there atm is sort of counter-intuitive for that because it moves up.
 7- Completar las responsive images y todo lo de density switching y así.
+8- Testear en otros navegadores.

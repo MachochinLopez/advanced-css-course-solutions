@@ -58,7 +58,7 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -50rem;
     z-index: 1500;
 
     opacity: 0;
@@ -120,6 +120,7 @@
     opacity: 1;
     width: 100%;
     visibility: visible;
+    left: 0;
   }
 
   &__icon {
